@@ -72,7 +72,7 @@ function api(q) {
 
     localStorage.setItem(searchCount, query);
 
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + query + "&api_key=" + key;
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + query + "&api_key=" + key;
     $.ajax({
         url: queryURL,
         method: "GET"
